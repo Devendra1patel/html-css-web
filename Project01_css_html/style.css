@@ -1,0 +1,226 @@
+/*all body*/
+*{
+    margin:0;
+    padding:0;
+  }
+  /*css variable  */
+  :root{
+    --navbar-height:59px;
+  }
+  /*navigation bar : navbar*/
+  #navbar{
+    /* border:2px solid orange; */
+    /* height:4rem; */
+    /* left:0px; */
+    /* align/-items:center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    top:0px;
+    display:flex;
+    width:100%;
+    position:absolute;
+    z-index: 1;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  #navbar::before{
+    top:0;
+    left:0;
+    content:"";
+    background-color:gray;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-2;
+    opacity:0.7;
+  }
+  #navbar ul{
+    /* background-color:greenyellow; */
+    display:flex;
+   /* overflow: none; */
+    margin:0;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar ul li{
+    display:flex;
+    flex-shrink:2;
+    padding:5px;
+    /* margin-left:15px; */
+    list-style: none;
+  }
+  #navbar ul li a{
+    display:block;
+    color:yellow;
+    padding:10px;    
+    text-decoration:none;
+    font-weight: bold;
+    font-size:large;
+  }
+  #logo_img{
+    padding:0;
+    margin:0;
+    width:4rem;
+    height: 4rem;
+  }
+
+  /* hower on navbar */
+  #navbar ul li:hover{
+       background-color:black;
+       color:white;
+       border-radius: 5px;
+  }
+/* ------------------------------------------------------------------------------ */
+
+  /* SECTION STYLE */
+  #home{
+    display:flex;
+    /* border:2px solid blue; */
+    height: 22rem;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: absolute; */
+  }
+  #home::before{
+    background:url("img/bg_01.jpg") no-repeat center center/cover;
+    top:0;
+    left:0;
+    content:"";
+    position:absolute;
+    height:22rem;
+    width:100%;
+    z-index:-1;
+    opacity:0.85;
+  }
+  /* BUTTON */
+  #home button{
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+    border: 1px solid yellow;
+    box-shadow:2px 2px yellow, inset 2px 2px yellow;
+    border-radius: 10px;
+    padding:4px;
+  }
+  #home p{
+    font-size: 1.5rem;
+   }
+
+  /* service-container */
+  .service-container{
+    /* border:2px solid red; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    /* border:2px solid green; */
+    /* background-color: black; */
+    display:flex;
+    padding: 5px;
+  }
+  .box1-box2-box3{
+    border:1px solid goldenrod;
+    background-color: rgb(168, 211, 211);
+    border-radius: 15px;
+    padding: 7px;
+    margin:2px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .box1-box2-box3 img{
+    border-radius: 15px;
+}
+  /* ------------------------------------------------------------------ */
+  /* client-container : section */
+  #client-container{
+    width:100%;
+    display:flex;
+    position: relative;
+    height:160px;
+    /* width:700px; */
+    flex-direction: column;
+    /* border:2px solid black; */
+  }
+  #client-container h1{
+    margin:auto;
+    display: block;
+  }
+  #client-container::before{
+    background:url('https://previews.123rf.com/images/mcherevan/mcherevan1701/mcherevan170100057/70932451-menu-stone-table-with-fork-and-knife-a-good-background-for-creating-restaurant-menus-cafes-bars-.jpg');
+    content:"";
+    width:100%;
+    height:160px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-2;
+    opacity: 0.9;
+  }
+  .clients{
+    /* border:2px solid red; */
+    display:flex;
+    justify-content:center;
+    /* flex-wrap: wrap; */
+  }
+  .client-item img{
+    width:100px;
+    height:100px;
+  }
+  /* ----------------------------------------------------------------- */
+  #contact-container{
+    /* border:2px solid black; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: black;
+    color:white
+  }
+  .contact-form{
+    /* border:2px solid black; */
+    width:50%;
+    /* background-color: gray; */
+  }
+  .contact-form input{
+    width:100%; 
+    padding: 2px;
+  }
+  /* .contact-form text{
+    border:2px solid black;
+  } */
+  /* -------------------------------------------------------------- */
+  #foot-container{
+    background-color:black;
+    color:white;
+    /* margin:auto;
+    width:100%; */
+    /* width:100%; */
+    }
+    #foot-container text{
+      margin:auto;
+      width:50%;
+      display:block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
